@@ -14,8 +14,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "vscode-extension.helloWorld",
-        "title": "Hello World"
+          "command": "codeResourceHelper.showResources",
+          "title": "Show Resources for Code"
       }
     ]
   },
