@@ -10,20 +10,12 @@
   "categories": [
     "Themes"
   ],
-  "activationEvents": [
-    "onCommand:extension.selectCollege",
-    "onCommand:extension.adjustIntensity"
-  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "extension.selectCollege",
-        "title": "Select College"
-      },
-      {
-        "command": "extension.adjustIntensity",
-        "title": "Adjust Intensity"
+        "command": "extension.configureTheme",
+        "title": "Configure Theme"
       }
     ]
   },
