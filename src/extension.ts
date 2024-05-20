@@ -63,7 +63,7 @@ async function applyCollegeTheme() {
 
 async function selectUIParts(): Promise<string[]> {
   const uiParts = await vscode.window.showQuickPick(
-    ["Activity Bar", "Sidebar", "Buttons", "Terminal"],
+    ["Activity Bar", "Sidebar", "Buttons", "Terminal", "Status Bar"],
     {
       placeHolder: "Select UI parts to apply the theme to",
       canPickMany: true,
@@ -78,18 +78,33 @@ function applyTheme(college: College, uiParts: string[]) {
     colors["activityBar.background"] = college.primary;
     colors["activityBar.foreground"] = college.secondary;
     colors["activityBar.activeBorder"] = college.secondary;
+    // colors["activityBar.border"] = college.secondary;
+    colors["activityBarBadge.foreground"] = college.primary;
+    colors["activityBarBadge.background"] = college.secondary;
   }
   if (uiParts.includes("Sidebar")) {
     colors["sideBar.background"] = college.primary;
     colors["sideBar.foreground"] = college.secondary;
   }
   if (uiParts.includes("Buttons")) {
-    colors["button.background"] = college.primary;
-    colors["button.foreground"] = college.secondary;
+    colors["button.background"] = college.secondary;
+    colors["button.foreground"] = college.primary;
+    // colors["button.hoverBackground"] = college.secondary;
+    colors["button.secondaryBackground"] = college.primary;
+    colors["button.secondaryForeground"] = college.secondary;
+    // colors["button.secondaryHoverBackground"] = college.secondary;
   }
   if (uiParts.includes("Terminal")) {
-    colors["terminal.background"] = college.primary;
+    colors["panel.background"] = college.primary;
+    colors["panelTitle.activeBorder"] = college.secondary;
+    colors["panelTitle.activeForeground"] = college.secondary;
     colors["terminal.foreground"] = college.secondary;
+  }
+  if (uiParts.includes("Status Bar")) {
+    colors["statusBar.background"] = college.primary;
+    colors["statusBar.foreground"] = college.secondary;
+    colors["statusBarItem.remoteBackground"] = college.secondary;
+    colors["statusBarItem.remoteForeground"] = college.primary;
   }
 
   const theme = {
@@ -178,6 +193,10 @@ async function inputCustomColors() {
       "Applied custom colors to selected parts"
     );
   }
+}
+
+function getHoverColor() {
+  return "hello";
 }
 
 export function deactivate() {}
