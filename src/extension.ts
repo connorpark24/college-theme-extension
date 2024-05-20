@@ -20,7 +20,10 @@ export function activate(context: vscode.ExtensionContext) {
           (college) => college.name === selectedCollegeName
         );
         if (selectedCollege) {
-          applyTheme(selectedCollege);
+          const uiParts = await selectUIParts();
+          if (uiParts.length > 0) {
+            applyTheme(selectedCollege, uiParts);
+          }
         }
       }
     }
@@ -29,14 +32,38 @@ export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(selectCollege);
 }
 
-function applyTheme(college: College) {
+async function selectUIParts(): Promise<string[]> {
+  const uiParts = await vscode.window.showQuickPick(
+    ["Activity Bar", "Sidebar", "Editor", "Badge"],
+    {
+      placeHolder: "Select UI parts to apply the theme to",
+      canPickMany: true,
+    }
+  );
+  return uiParts || [];
+}
+
+function applyTheme(college: College, uiParts: string[]) {
+  const lessIntenseSecondaryColor = adjustColorIntensity(college.secondary, 50); // 50% less intense
+
+  const colors: { [key: string]: string } = {};
+  if (uiParts.includes("Activity Bar")) {
+    colors["activityBar.background"] = college.primary;
+    colors["activityBar.foreground"] = college.secondary;
+  }
+  if (uiParts.includes("Sidebar")) {
+    colors["sideBar.background"] = college.primary;
+    colors["sideBar.foreground"] = college.secondary;
+  }
+  if (uiParts.includes("Editor")) {
+    colors["editor.background"] = college.primary;
+    colors["editor.foreground"] = college.secondary;
+  }
+
   const theme = {
     base: "vs-dark",
     inherit: true,
-    colors: {
-      "activityBar.background": college.primary,
-      "activityBar.foreground": college.secondary,
-    },
+    colors: colors,
   };
 
   vscode.workspace
@@ -46,7 +73,26 @@ function applyTheme(college: College) {
     .getConfiguration()
     .update("editor.tokenColorCustomizations", {}, true);
 
-  vscode.window.showInformationMessage(`Applied ${college.name} theme`);
+  vscode.window.showInformationMessage(
+    `Applied ${college.name} theme to selected parts`
+  );
+}
+
+function adjustColorIntensity(color: string, intensity: number): string {
+  const f = parseInt(color.slice(1), 16);
+  const t = intensity / 100;
+  const R = f >> 16;
+  const G = (f >> 8) & 0x00ff;
+  const B = f & 0x0000ff;
+
+  return `#${(
+    0x1000000 +
+    (Math.round((255 - R) * t) + R) * 0x10000 +
+    (Math.round((255 - G) * t) + G) * 0x100 +
+    (Math.round((255 - B) * t) + B)
+  )
+    .toString(16)
+    .slice(1)}`;
 }
 
 export function deactivate() {}
