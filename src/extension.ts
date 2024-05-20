@@ -34,7 +34,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 async function selectUIParts(): Promise<string[]> {
   const uiParts = await vscode.window.showQuickPick(
-    ["Activity Bar", "Sidebar", "Editor", "Badge"],
+    ["Activity Bar", "Sidebar", "Buttons", "Terminal"],
     {
       placeHolder: "Select UI parts to apply the theme to",
       canPickMany: true,
@@ -44,20 +44,23 @@ async function selectUIParts(): Promise<string[]> {
 }
 
 function applyTheme(college: College, uiParts: string[]) {
-  const lessIntenseSecondaryColor = adjustColorIntensity(college.secondary, 50); // 50% less intense
-
   const colors: { [key: string]: string } = {};
   if (uiParts.includes("Activity Bar")) {
     colors["activityBar.background"] = college.primary;
     colors["activityBar.foreground"] = college.secondary;
+    colors["activityBar.activeBorder"] = college.secondary;
   }
   if (uiParts.includes("Sidebar")) {
     colors["sideBar.background"] = college.primary;
     colors["sideBar.foreground"] = college.secondary;
   }
-  if (uiParts.includes("Editor")) {
-    colors["editor.background"] = college.primary;
-    colors["editor.foreground"] = college.secondary;
+  if (uiParts.includes("Buttons")) {
+    colors["button.background"] = college.primary;
+    colors["button.foreground"] = college.secondary;
+  }
+  if (uiParts.includes("Terminal")) {
+    colors["terminal.background"] = college.primary;
+    colors["terminal.foreground"] = college.secondary;
   }
 
   const theme = {
@@ -76,23 +79,6 @@ function applyTheme(college: College, uiParts: string[]) {
   vscode.window.showInformationMessage(
     `Applied ${college.name} theme to selected parts`
   );
-}
-
-function adjustColorIntensity(color: string, intensity: number): string {
-  const f = parseInt(color.slice(1), 16);
-  const t = intensity / 100;
-  const R = f >> 16;
-  const G = (f >> 8) & 0x00ff;
-  const B = f & 0x0000ff;
-
-  return `#${(
-    0x1000000 +
-    (Math.round((255 - R) * t) + R) * 0x10000 +
-    (Math.round((255 - G) * t) + G) * 0x100 +
-    (Math.round((255 - B) * t) + B)
-  )
-    .toString(16)
-    .slice(1)}`;
 }
 
 export function deactivate() {}

@@ -20,4 +20,39 @@ export const colleges: College[] = [
     primary: "#232D4B",
     secondary: "#E57200",
   },
+  {
+    name: "Georgetown University",
+    primary: "#004282",
+    secondary: "#9DA1AA",
+  },
+  {
+    name: "Virginia Tech",
+    primary: "#630031",
+    secondary: "#E87722",
+  },
+  {
+    name: "University of Maryland",
+    primary: "#FFCD00",
+    secondary: "#E03C31",
+  },
+  {
+    name: "Penn State University",
+    primary: "#002D62",
+    secondary: "#FFFFFF",
+  },
+  {
+    name: "Harvard University",
+    primary: "#A41034",
+    secondary: "#FFFFFF",
+  },
+  {
+    name: "University of Pennsylvania",
+    primary: "#011F5B",
+    secondary: "#990000",
+  },
+  {
+    name: "Duke University",
+    primary: "#001A57",
+    secondary: "#FFFFFF",
+  },
 ];
