@@ -1,6 +1,12 @@
 import * as vscode from "vscode";
 import { colleges, College } from "./colleges";
-import { selectUIParts, getIntensity, adjustColor } from "./utils";
+import {
+  selectUIParts,
+  getIntensity,
+  adjustColor,
+  lightenColor,
+  darkenColor,
+} from "./utils";
 
 // Apply theme to VSCode
 export async function applyCollegeTheme() {
@@ -49,6 +55,11 @@ function applyTheme(college: College, uiParts: string[]) {
   if (uiParts.includes("Buttons")) {
     colors["button.background"] = college.secondary;
     colors["button.foreground"] = college.primary;
+    const hoverIntensity = 80;
+    colors["button.hoverBackground"] = darkenColor(
+      college.secondary,
+      hoverIntensity
+    );
     colors["button.secondaryBackground"] = college.primary;
     colors["button.secondaryForeground"] = college.secondary;
   }

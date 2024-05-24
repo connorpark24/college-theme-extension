@@ -34,7 +34,7 @@ export function adjustColor(hex: string, intensity: number): string {
   return hex;
 }
 
-function lightenColor(hex: string, intensity: number): string {
+export function lightenColor(hex: string, intensity: number): string {
   const factor = ((50 - intensity) / 50) * 0.25;
   let r = parseInt(hex.substring(1, 3), 16);
   let g = parseInt(hex.substring(3, 5), 16);
@@ -50,7 +50,7 @@ function lightenColor(hex: string, intensity: number): string {
     .toUpperCase()}`;
 }
 
-function darkenColor(hex: string, intensity: number): string {
+export function darkenColor(hex: string, intensity: number): string {
   const factor = ((intensity - 50) / 50) * 0.25;
   let r = parseInt(hex.substring(1, 3), 16);
   let g = parseInt(hex.substring(3, 5), 16);
