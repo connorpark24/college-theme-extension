@@ -27,7 +27,7 @@ export const colleges: College[] = [
   },
   {
     name: "Northwestern University",
-    primary: "4E2A84",
+    primary: "#4E2A84",
     secondary: "#FFFFFF",
   },
   {
@@ -62,8 +62,8 @@ export const colleges: College[] = [
   },
   {
     name: "University of Minnesota",
-    primary: "7A0019",
-    secondary: "FFCC33",
+    primary: "#7A0019",
+    secondary: "#FFCC33",
   },
   {
     name: "University of Nebraska",
