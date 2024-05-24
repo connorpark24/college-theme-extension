@@ -1,9 +1,9 @@
 {
   "name": "college-theme-generator",
-  "displayName": "College Themes",
+  "displayName": "College Theme Generator",
   "description": "An extension to apply a theme based on you college colors. ",
-  "version": "0.0.1",
-  "publisher": "Connor Park",
+  "version": "1.0.1",
+  "publisher": "connorpark024",
   "engines": {
     "vscode": "^1.89.0"
   },
