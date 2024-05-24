@@ -6,19 +6,9 @@ export interface College {
 
 export const colleges: College[] = [
   {
-    name: "University of Michigan",
-    primary: "#00274C",
-    secondary: "#FFCB05",
-  },
-  {
-    name: "Stanford University",
-    primary: "#8C1515",
+    name: "Duke University",
+    primary: "#012169",
     secondary: "#FFFFFF",
-  },
-  {
-    name: "University of Virginia",
-    primary: "#232D4B",
-    secondary: "#E57200",
   },
   {
     name: "Georgetown University",
@@ -26,24 +16,59 @@ export const colleges: College[] = [
     secondary: "#63666A",
   },
   {
-    name: "Virginia Tech",
-    primary: "#630031",
-    secondary: "#E87722",
+    name: "Harvard University",
+    primary: "#A51C30",
+    secondary: "#FFFFFF",
   },
   {
-    name: "University of Maryland",
-    primary: "#FFCD00",
-    secondary: "#E03C31",
+    name: "Indiana University",
+    primary: "#990000",
+    secondary: "#FFFFFF",
+  },
+  {
+    name: "Northwestern University",
+    primary: "4E2A84",
+    secondary: "#FFFFFF",
   },
   {
     name: "Penn State University",
-    primary: "#002D62",
+    primary: "#001E44",
     secondary: "#FFFFFF",
   },
   {
-    name: "Harvard University",
-    primary: "#A41034",
+    name: "Stanford University",
+    primary: "#820000",
     secondary: "#FFFFFF",
+  },
+  {
+    name: "University of Illinois",
+    primary: "#13294B",
+    secondary: "#FF5F0F",
+  },
+  {
+    name: "University of Iowa",
+    primary: "#FFCD00",
+    secondary: "#000000",
+  },
+  {
+    name: "University of Maryland",
+    primary: "#E21833",
+    secondary: "#FFD200",
+  },
+  {
+    name: "University of Michigan",
+    primary: "#00274C",
+    secondary: "#FFCB05",
+  },
+  {
+    name: "University of Minnesota",
+    primary: "7A0019",
+    secondary: "FFCC33",
+  },
+  {
+    name: "University of Nebraska",
+    primary: "#D00000",
+    secondary: "#F5F1E7",
   },
   {
     name: "University of Pennsylvania",
@@ -51,8 +76,18 @@ export const colleges: College[] = [
     secondary: "#990000",
   },
   {
-    name: "Duke University",
-    primary: "#001A57",
+    name: "University of Virginia",
+    primary: "#232D4B",
+    secondary: "#E57200",
+  },
+  {
+    name: "University of Wisconsin",
+    primary: "#C5050C",
     secondary: "#FFFFFF",
+  },
+  {
+    name: "Virginia Tech",
+    primary: "#861F41",
+    secondary: "#E5751F",
   },
 ];
