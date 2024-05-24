@@ -1,5 +1,5 @@
 {
-  "name": "vscode-extension",
+  "name": "college-theme-generator",
   "displayName": "College Themes",
   "description": "An extension to apply a theme based on you college colors. ",
   "version": "0.0.1",
@@ -11,6 +11,9 @@
     "Themes"
   ],
   "main": "./out/extension.js",
+  "activationEvents": [
+    "onCommand:configureTheme"
+  ],
   "contributes": {
     "commands": [
       {

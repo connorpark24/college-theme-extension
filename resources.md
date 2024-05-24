@@ -1,5 +1,11 @@
 # Resources + Docs
 
+## In Progress
+
+- Getting hover color based on background color
+- Increasing aesthetics according to background color
+- Making sure all aspects of given area are affected by theme
+
 ## Completed Features
 
 - Inputting custom colors

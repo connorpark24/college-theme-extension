@@ -22,8 +22,8 @@ export const colleges: College[] = [
   },
   {
     name: "Georgetown University",
-    primary: "#004282",
-    secondary: "#9DA1AA",
+    primary: "#041E42",
+    secondary: "#63666A",
   },
   {
     name: "Virginia Tech",
