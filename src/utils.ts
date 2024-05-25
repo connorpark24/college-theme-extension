@@ -2,7 +2,15 @@ import * as vscode from "vscode";
 
 export async function selectUIParts(): Promise<string[]> {
   const uiParts = await vscode.window.showQuickPick(
-    ["Activity Bar", "Sidebar", "Buttons", "Terminal", "Status Bar"],
+    [
+      "Activity Bar",
+      "Sidebar",
+      "Buttons",
+      "Inputs",
+      "Terminal",
+      "Status Bar",
+      "Details",
+    ],
     {
       placeHolder: "Select UI parts to apply the theme to",
       canPickMany: true,

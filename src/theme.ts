@@ -50,18 +50,24 @@ function applyTheme(college: College, uiParts: string[]) {
   }
   if (uiParts.includes("Sidebar")) {
     colors["sideBar.background"] = college.primary;
-    colors["sideBar.foreground"] = college.secondary;
+    // colors["sideBar.foreground"] = college.secondary;
+    colors["sideBarSectionHeader.background"] = college.primary;
+    colors["sideBarTitle.foreground"] = college.secondary;
+    colors["list.hoverBackground"] = darkenColor(college.primary, 80);
+    colors["list.inactiveSelectionBackground"] = lightenColor(
+      college.primary,
+      30
+    );
   }
   if (uiParts.includes("Buttons")) {
     colors["button.background"] = college.secondary;
     colors["button.foreground"] = college.primary;
-    const hoverIntensity = 80;
-    colors["button.hoverBackground"] = darkenColor(
-      college.secondary,
-      hoverIntensity
-    );
+    colors["button.hoverBackground"] = darkenColor(college.secondary, 80);
     colors["button.secondaryBackground"] = college.primary;
     colors["button.secondaryForeground"] = college.secondary;
+  }
+  if (uiParts.includes("Inputs")) {
+    colors["input.background"] = lightenColor(college.primary, 40);
   }
   if (uiParts.includes("Terminal")) {
     colors["panel.background"] = college.primary;
@@ -72,8 +78,13 @@ function applyTheme(college: College, uiParts: string[]) {
   if (uiParts.includes("Status Bar")) {
     colors["statusBar.background"] = college.primary;
     colors["statusBar.foreground"] = college.secondary;
+    colors["statusBar.debuggingBackground"] = college.secondary;
+    colors["statusBar.debuggingForeground"] = college.secondary;
     colors["statusBarItem.remoteBackground"] = college.secondary;
     colors["statusBarItem.remoteForeground"] = college.primary;
+  }
+  if (uiParts.includes("Details")) {
+    colors["progressBar.backgroud"] = college.secondary;
   }
 
   const theme = {

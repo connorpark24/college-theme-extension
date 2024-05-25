@@ -2,8 +2,7 @@
 
 ## In Progress
 
-- Getting hover color based on background color
-- Increasing aesthetics according to background color
+- Adjust hover colors based on current intensity instead of only primary + secondary colors
 - Making sure all aspects of given area are affected by theme
 
 ## Completed Features
@@ -17,6 +16,7 @@
   - Buttons
   - Bottom Panel
   - Status Bar
+- Getting hover color based on background color
 
 ## Resources
 
