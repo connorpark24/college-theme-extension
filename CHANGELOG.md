@@ -2,7 +2,9 @@
 
 ## [1.0.2]
 
-- Introduct support for 50+ additional colleges
+- Introduce support for a total of 25+ colleges
+- Add intensity adjustment feature
+- Bug fixes
 
 ## [1.0.1]
 

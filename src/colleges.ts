@@ -6,6 +6,21 @@ export interface College {
 
 export const colleges: College[] = [
   {
+    name: "Boston College",
+    primary: "#8A100B",
+    secondary: "#B29D6C",
+  },
+  {
+    name: "Brown University",
+    primary: "#4E3629",
+    secondary: "#ED1C24",
+  },
+  {
+    name: "Columbia University",
+    primary: "#B9D9EB",
+    secondary: "#FFFFFF",
+  },
+  {
     name: "Duke University",
     primary: "#012169",
     secondary: "#FFFFFF",
@@ -36,9 +51,29 @@ export const colleges: College[] = [
     secondary: "#FFFFFF",
   },
   {
+    name: "Princeton University",
+    primary: "#E77500",
+    secondary: "#121212",
+  },
+  {
     name: "Stanford University",
     primary: "#820000",
     secondary: "#FFFFFF",
+  },
+  {
+    name: "University of California, Berkeley",
+    primary: "#003262",
+    secondary: "#FDB515",
+  },
+  {
+    name: "University of California, Los Angeles",
+    primary: "#2774AE",
+    secondary: "#FFD100",
+  },
+  {
+    name: "University of Florida",
+    primary: "#0021A5",
+    secondary: "#FA4616",
   },
   {
     name: "University of Illinois",
@@ -71,6 +106,11 @@ export const colleges: College[] = [
     secondary: "#F5F1E7",
   },
   {
+    name: "University of Notre Dame",
+    primary: "#0C2340",
+    secondary: "#C99700",
+  },
+  {
     name: "University of Pennsylvania",
     primary: "#011F5B",
     secondary: "#990000",
@@ -89,5 +129,10 @@ export const colleges: College[] = [
     name: "Virginia Tech",
     primary: "#861F41",
     secondary: "#E5751F",
+  },
+  {
+    name: "Yale University",
+    primary: "#00356B",
+    secondary: "#FFFFFF",
   },
 ];
