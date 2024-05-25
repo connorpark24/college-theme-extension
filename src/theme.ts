@@ -115,7 +115,7 @@ export async function resetThemeConfigurations() {
     .update("editor.tokenColorCustomizations", {}, true);
 }
 
-// Swap primary and secondary colors
+// Swap primary and secondary colors and adjust intensity
 export async function swapColors() {
   const collegeNames = colleges.map((college) => college.name);
   const selectedCollegeName = await vscode.window.showQuickPick(collegeNames, {
@@ -127,17 +127,22 @@ export async function swapColors() {
       (college) => college.name === selectedCollegeName
     );
     if (selectedCollege) {
+      const uiParts = await selectUIParts();
+      const intensity = await getIntensity();
+      const adjustedPrimary = adjustColor(selectedCollege.secondary, intensity);
+      const adjustedSecondary = adjustColor(selectedCollege.primary, intensity);
+
       const swappedCollege = {
         ...selectedCollege,
-        primary: selectedCollege.secondary,
-        secondary: selectedCollege.primary,
+        primary: adjustedPrimary,
+        secondary: adjustedSecondary,
       };
-      const uiParts = await selectUIParts();
+
       if (uiParts.length > 0) {
         applyTheme(swappedCollege, uiParts);
       }
       vscode.window.showInformationMessage(
-        `Swapped colors for ${selectedCollege.name} and applied theme`
+        `Swapped colors and adjusted intensity for ${selectedCollege.name} and applied theme`
       );
     }
   }
