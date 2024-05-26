@@ -7,7 +7,7 @@ import {
 } from "./theme";
 
 export function activate(context: vscode.ExtensionContext) {
-  console.log('Congratulations, your extension "college-theme" is now active!');
+  console.log("Congratulations, College Theme Generator is now active!");
 
   let configureTheme = vscode.commands.registerCommand(
     "extension.configureTheme",
