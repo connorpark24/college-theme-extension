@@ -2,6 +2,10 @@
 
 Configure your VSCode theme to include your college colors.
 
+## Usage
+
+Use command "Apply College Theme" to apply theme.
+
 ## Features
 
 Inputting Custom Colors: allows users to input their college's primary and secondary colors.\

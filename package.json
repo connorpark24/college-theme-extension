@@ -19,7 +19,7 @@
     "commands": [
       {
         "command": "extension.configureTheme",
-        "title": "Configure Theme"
+        "title": "Apply College Theme"
       }
     ]
   },
