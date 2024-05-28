@@ -21,6 +21,16 @@ export const colleges: College[] = [
     secondary: "#FFFFFF",
   },
   {
+    name: "Cornell University",
+    primary: "#B31B1B",
+    secondary: "#FFFFFF",
+  },
+  {
+    name: "Dartmouth University",
+    primary: "#00693E",
+    secondary: "#FFFFFF",
+  },
+  {
     name: "Duke University",
     primary: "#012169",
     secondary: "#FFFFFF",
@@ -111,14 +121,29 @@ export const colleges: College[] = [
     secondary: "#C99700",
   },
   {
+    name: "University of Oregon",
+    primary: "#007030",
+    secondary: "#FEE11A",
+  },
+  {
     name: "University of Pennsylvania",
     primary: "#011F5B",
     secondary: "#990000",
   },
   {
+    name: "University of Southern California",
+    primary: "#990000",
+    secondary: "#FFCC00",
+  },
+  {
     name: "University of Virginia",
     primary: "#232D4B",
     secondary: "#E57200",
+  },
+  {
+    name: "University of Washington",
+    primary: "#4B2E83",
+    secondary: "#E8E3D3",
   },
   {
     name: "University of Wisconsin",

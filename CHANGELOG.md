@@ -1,6 +1,12 @@
 # Change Log
 
-## [1.0.2]
+## [1.2.1]
+
+- Add intensity adjustment when swapping colors
+- Update README.md
+- Change command name to "Apply College Theme"
+
+## [1.1.1]
 
 - Introduce support for a total of 25+ colleges
 - Add intensity adjustment feature
