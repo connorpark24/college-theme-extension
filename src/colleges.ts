@@ -6,14 +6,34 @@ export interface College {
 
 export const colleges: College[] = [
   {
+    name: "Auburn University",
+    primary: "#F26522",
+    secondary: "#03244D",
+  },
+  {
     name: "Boston College",
     primary: "#8A100B",
     secondary: "#B29D6C",
   },
   {
+    name: "Boston University",
+    primary: "#CC0000",
+    secondary: "#2D2926",
+  },
+  {
     name: "Brown University",
     primary: "#4E3629",
     secondary: "#ED1C24",
+  },
+  {
+    name: "Carnegie Mellon University",
+    primary: "#C41230",
+    secondary: "#000000",
+  },
+  {
+    name: "Clemson University",
+    primary: "#F56600",
+    secondary: "#FFFFFF",
   },
   {
     name: "Columbia University",
@@ -36,9 +56,19 @@ export const colleges: College[] = [
     secondary: "#FFFFFF",
   },
   {
+    name: "Emory University",
+    primary: "#012169",
+    secondary: "#F2A900",
+  },
+  {
     name: "Georgetown University",
     primary: "#041E42",
     secondary: "#63666A",
+  },
+  {
+    name: "Georgia Tech",
+    primary: "#B3A369",
+    secondary: "#003057",
   },
   {
     name: "Harvard University",
@@ -48,6 +78,11 @@ export const colleges: College[] = [
   {
     name: "Indiana University",
     primary: "#990000",
+    secondary: "#FFFFFF",
+  },
+  {
+    name: "New York University",
+    primary: "#57068C",
     secondary: "#FFFFFF",
   },
   {
@@ -66,6 +101,11 @@ export const colleges: College[] = [
     secondary: "#121212",
   },
   {
+    name: "Rice University",
+    primary: "#00205B",
+    secondary: "#FFFFFF",
+  },
+  {
     name: "Stanford University",
     primary: "#820000",
     secondary: "#FFFFFF",
@@ -81,9 +121,24 @@ export const colleges: College[] = [
     secondary: "#FFD100",
   },
   {
+    name: "University of Chicago",
+    primary: "#800000",
+    secondary: "#FFFFFF",
+  },
+  {
+    name: "University of Connecticut",
+    primary: "#000E2F",
+    secondary: "#FFFFFF",
+  },
+  {
     name: "University of Florida",
     primary: "#0021A5",
     secondary: "#FA4616",
+  },
+  {
+    name: "University of Georgia",
+    primary: "#",
+    secondary: "#",
   },
   {
     name: "University of Illinois",
@@ -116,6 +171,11 @@ export const colleges: College[] = [
     secondary: "#F5F1E7",
   },
   {
+    name: "University of North Carolina, Chapel Hill",
+    primary: "#",
+    secondary: "#",
+  },
+  {
     name: "University of Notre Dame",
     primary: "#0C2340",
     secondary: "#C99700",
@@ -131,9 +191,24 @@ export const colleges: College[] = [
     secondary: "#990000",
   },
   {
+    name: "University of Pittsburgh",
+    primary: "#",
+    secondary: "#",
+  },
+  {
     name: "University of Southern California",
     primary: "#990000",
     secondary: "#FFCC00",
+  },
+  {
+    name: "University of Tennesee, Knoxville",
+    primary: "#",
+    secondary: "#",
+  },
+  {
+    name: "University of Texas, Austin",
+    primary: "#",
+    secondary: "#",
   },
   {
     name: "University of Virginia",
@@ -151,9 +226,19 @@ export const colleges: College[] = [
     secondary: "#FFFFFF",
   },
   {
+    name: "Vanderbilt University",
+    primary: "#",
+    secondary: "#",
+  },
+  {
     name: "Virginia Tech",
     primary: "#861F41",
     secondary: "#E5751F",
+  },
+  {
+    name: "William & Mary",
+    primary: "#",
+    secondary: "#",
   },
   {
     name: "Yale University",
