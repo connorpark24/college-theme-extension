@@ -137,8 +137,8 @@ export const colleges: College[] = [
   },
   {
     name: "University of Georgia",
-    primary: "#",
-    secondary: "#",
+    primary: "#BA0C2F",
+    secondary: "#000000",
   },
   {
     name: "University of Illinois",
@@ -172,8 +172,8 @@ export const colleges: College[] = [
   },
   {
     name: "University of North Carolina, Chapel Hill",
-    primary: "#",
-    secondary: "#",
+    primary: "#007FAE",
+    secondary: "#FFFFFF",
   },
   {
     name: "University of Notre Dame",
@@ -192,8 +192,8 @@ export const colleges: College[] = [
   },
   {
     name: "University of Pittsburgh",
-    primary: "#",
-    secondary: "#",
+    primary: "#003594",
+    secondary: "#FFB81C",
   },
   {
     name: "University of Southern California",
@@ -202,13 +202,13 @@ export const colleges: College[] = [
   },
   {
     name: "University of Tennesee, Knoxville",
-    primary: "#",
-    secondary: "#",
+    primary: "#FF8200",
+    secondary: "#FFFFFF",
   },
   {
     name: "University of Texas, Austin",
-    primary: "#",
-    secondary: "#",
+    primary: "#BF5700",
+    secondary: "#FFFFFF",
   },
   {
     name: "University of Virginia",
@@ -227,8 +227,8 @@ export const colleges: College[] = [
   },
   {
     name: "Vanderbilt University",
-    primary: "#",
-    secondary: "#",
+    primary: "#CFAE70",
+    secondary: "#1C1C1C",
   },
   {
     name: "Virginia Tech",
@@ -237,8 +237,8 @@ export const colleges: College[] = [
   },
   {
     name: "William & Mary",
-    primary: "#",
-    secondary: "#",
+    primary: "#115740",
+    secondary: "#B9975B",
   },
   {
     name: "Yale University",
