@@ -206,6 +206,16 @@ export const colleges: College[] = [
     secondary: "#FFFFFF",
   },
   {
+    name: "University of Toronto",
+    primary: "25355A",
+    secondary: "#F2F4F7",
+  },
+  {
+    name: "University of Waterloo",
+    primary: "#FFD54F",
+    secondary: "#000000",
+  },
+  {
     name: "University of Texas, Austin",
     primary: "#BF5700",
     secondary: "#FFFFFF",
