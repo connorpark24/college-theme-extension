@@ -61,6 +61,16 @@ export const colleges: College[] = [
     secondary: "#F2A900",
   },
   {
+    name: "Florida State University",
+    primary: "#782F40",
+    secondary: "#CEB888",
+  },
+  {
+    name: "George Mason University",
+    primary: "#006633",
+    secondary: "#FFCC33",
+  },
+  {
     name: "Georgetown University",
     primary: "#041E42",
     secondary: "#63666A",
@@ -81,9 +91,29 @@ export const colleges: College[] = [
     secondary: "#FFFFFF",
   },
   {
+    name: "Johns Hopkins University",
+    primary: "#68ACE5",
+    secondary: "#FFFFFF",
+  },
+  {
+    name: "Massachusetts Institute of Technology",
+    primary: "#750014",
+    secondary: "#8B959E",
+  },
+  {
     name: "New York University",
     primary: "#57068C",
     secondary: "#FFFFFF",
+  },
+  {
+    name: "North Carolina State University",
+    primary: "#CC0000",
+    secondary: "#000000",
+  },
+  {
+    name: "Northeastern University",
+    primary: "#000000",
+    secondary: "#C8102E",
   },
   {
     name: "Northwestern University",
@@ -109,6 +139,16 @@ export const colleges: College[] = [
     name: "Stanford University",
     primary: "#820000",
     secondary: "#FFFFFF",
+  },
+  {
+    name: "University of Alabama",
+    primary: "#9E1B32",
+    secondary: "#828A8F",
+  },
+  {
+    name: "University of Arizona",
+    primary: "#AB0520",
+    secondary: "#0C234B",
   },
   {
     name: "University of California, Berkeley",
@@ -244,6 +284,11 @@ export const colleges: College[] = [
     name: "Virginia Tech",
     primary: "#861F41",
     secondary: "#E5751F",
+  },
+  {
+    name: "Washington University in St. Louis",
+    primary: "#A51417",
+    secondary: "#3D3D3D",
   },
   {
     name: "William & Mary",

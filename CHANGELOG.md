@@ -1,5 +1,9 @@
 # Change Log
 
+## [1.3.1]
+
+- Add colleges
+
 ## [1.2.1]
 
 - Add intensity adjustment when swapping colors
