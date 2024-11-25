@@ -106,6 +106,11 @@ export const colleges: College[] = [
     secondary: "#8B959E",
   },
   {
+    name: "McGill University",
+    primary: "#ED1B2F",
+    secondary: "#FFFFFF",
+  },
+  {
     name: "New York University",
     primary: "#57068C",
     secondary: "#FFFFFF",
